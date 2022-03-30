@@ -1,0 +1,161 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.background {
+  margin: 5px;
+  background: linear-gradient(rgba(200, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
+    url(./background-image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 15px;
+}
+.background input,
+select {
+  height: 35px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 2px;
+}
+.background h1,
+h2,
+h3,
+p {
+  font-size: 20px;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  padding: 50px;
+  text-align: left;
+  color: white;
+}
+.container h1 {
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+.container .enterName {
+  display: flex;
+  width: 100%;
+}
+.container .enterName .firstName,
+.lastName {
+  width: 50%;
+}
+.firstName input {
+  width: 98%;
+}
+.lastName input {
+  width: 98%;
+  margin-left: 5px;
+}
+
+.ageGender {
+  display: flex;
+}
+.age,
+.gender {
+  width: 50%;
+}
+.age input {
+  width: 98%;
+}
+.gender select {
+  width: 98%;
+  margin-left: 5px;
+}
+
+.phoneNumber input {
+  width: 100%;
+}
+
+.continent {
+  width: 100%;
+}
+.continents {
+  width: 49%;
+}
+.country {
+  margin-left: 0px;
+  width: 50%;
+}
+.continent h3 {
+  text-align: center;
+}
+
+.subjectandGrade {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.subjectGrades {
+  width: 100%;
+  text-align: center;
+}
+.subjects {
+  width: 49%;
+}
+.scores {
+  width: 49%;
+}
+
+.errors {
+  color: red;
+}
+
+button {
+  background-color: green;
+
+  color: white;
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 900px) {
+  .subjectandGrade {
+    display: block;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  .continents {
+    width: 100%;
+  }
+  .country {
+    width: 100%;
+  }
+  .subjectGrades {
+    width: 100%;
+    margin: auto;
+  }
+  .subjects {
+    width: 100%;
+  }
+  .scores {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .ageGender {
+    display: block;
+  }
+  .container .enterName {
+    display: block;
+    width: 100%;
+  }
+  .container .enterName .firstName,
+  .lastName {
+    width: 100%;
+  }
+  .age,
+  .gender {
+    width: 100%;
+  }
+}
