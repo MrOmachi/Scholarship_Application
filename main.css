@@ -141,8 +141,16 @@ button {
   .scores {
     width: 100%;
   }
+  .background input,
+  select {
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2px;
+    margin: 10px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 899px) {
   .ageGender {
     display: block;
   }
@@ -157,5 +165,21 @@ button {
   .age,
   .gender {
     width: 100%;
+  }
+  select {
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2px;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  select {
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2px;
+    margin: 20px;
   }
 }
