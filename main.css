@@ -180,6 +180,7 @@ button {
     border: 1px solid grey;
     border-radius: 20px;
     padding: 2px;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
