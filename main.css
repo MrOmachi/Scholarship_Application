@@ -80,11 +80,12 @@ p {
   width: 100%;
 }
 .continents {
+  margin-left: 0px;
   width: 49%;
 }
 .country {
   margin-left: 0px;
-  width: 50%;
+  width: 49%;
 }
 .continent h3 {
   text-align: center;

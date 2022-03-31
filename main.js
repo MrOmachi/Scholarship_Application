@@ -57,6 +57,9 @@ let calculatedGrade;
 regBtn.addEventListener('click', function () {
   fieldError();
 });
+
+//HERE IS THE VALIDATION FOR ALL THE FORM FIELDS FIRST OF ALL
+
 function fieldError() {
   if (firstName.value == '') {
     firstNameError.innerHTML = 'fill this field correctly';
@@ -98,6 +101,7 @@ function fieldError() {
   clearError();
 }
 
+//THIS IS TO CLEAR THE ERROR IF THEY ARE FILLED CORRECTLY
 function clearError() {
   if (firstName.value != '') {
     firstNameError.innerHTML = '';
@@ -244,6 +248,9 @@ function loopStudents6() {
   selectSubjects6.innerHTML = `  <option value="">Select Subject</option> ${allOptions}`;
 }
 
+//FUNCTIONS FOR AGE, CONTINENTS AND SUBJECTS STARTS HERE
+
+//HERE IS THE FUNCTION TO CALCULATE THE AGE POINT
 function agePoint() {
   agePointHold = 0;
   if (age.value >= 18 && age.value <= 24) {
@@ -262,6 +269,7 @@ function agePoint() {
   countryPoints();
 }
 
+//HERE IS THE FUNCTION TO CALCULATE THE COUNTRY POINTS
 function countryPoints() {
   continentPointHold = 0;
   if (continent.value == 'africaSelect') {
@@ -281,6 +289,7 @@ function countryPoints() {
   gradeAverageCheck();
 }
 
+//HERE IS THE FUNCTION TO CALCULATE THE GRADE AVERAGE FIRST BEFORE USING IT TO CALCULATE THE GRADE POINTS
 function gradeAverageCheck() {
   mathsScore = parseInt(mathsScore.value);
   engScore = parseInt(engScore.value);
@@ -301,8 +310,9 @@ function gradeAverageCheck() {
       selectSubjects5Score +
       selectSubjects6Score) /
     8;
-  console.log('points from grade average is ' + gradeAverage);
+  console.log('grade average is ' + gradeAverage);
 
+  // HERE THE LOGIC TO CALCULATE THE GRADE POINTS STARTS
   calculatedGrade = 0;
   if (gradeAverage >= 90 && gradeAverage <= 100) {
     calculatedGrade = calculatedGrade + 150;
@@ -325,6 +335,7 @@ function gradeAverageCheck() {
   eligibilityCheck();
 }
 
+//HERE IS THE LAST PART THAT CHECKS FOR THE ELIGIBILITY
 function eligibilityCheck() {
   if (totalPoints >= 180) {
     alert('Viola!!, You have been awarded the scholarship');
@@ -334,6 +345,7 @@ function eligibilityCheck() {
   }
 }
 
+//THIS FUNCTIONS HOLDS JUST THE CHART!!
 function showChart() {
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart;
