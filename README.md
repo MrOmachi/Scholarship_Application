@@ -1,7 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![](https://raw.githubusercontent.com/aceDavon/math-magician/development/src/img/__mockup__/MathMagician.jpg)
-
 # Scholarship_Application
 
 > This is a JavaScript one-page scholarship application. An Application for a scholarship board that examines an applicant's collected information and checks their eligibility for a scholarship. It is then based on hidden requirements by the organization and applicant scores in their different subjects. In this project, a chart.js is popped upon submission to display applicants' performance.
